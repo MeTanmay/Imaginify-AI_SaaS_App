@@ -103,7 +103,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
   }
   
   //TODO: Update the creditFee to something else
-  
+
   const onTransformHandler = async () => {
     setIsTransforming(true)
 
@@ -117,8 +117,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
       await updateCredits(userId, -1)
     })
   }
-
-
+  
   return (
     <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
